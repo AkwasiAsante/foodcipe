@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/foodcipe/static/css/main.74d7ffef.css",
-    "main.js": "/foodcipe/static/js/main.2367eba0.js",
+    "main.js": "/foodcipe/static/js/main.ec27a3e4.js",
     "static/media/img07.png": "/foodcipe/static/media/img07.f990a20c985cae19e300.png",
     "static/media/img01.jpg": "/foodcipe/static/media/img01.75344b889bce9aa294d2.jpg",
     "static/media/img05.jpg": "/foodcipe/static/media/img05.7667a1b57e5fab6f444c.jpg",
@@ -21,10 +21,10 @@
     "static/media/img_5.jpg": "/foodcipe/static/media/img_5.eec0e06115382189cc2d.jpg",
     "index.html": "/foodcipe/index.html",
     "main.74d7ffef.css.map": "/foodcipe/static/css/main.74d7ffef.css.map",
-    "main.2367eba0.js.map": "/foodcipe/static/js/main.2367eba0.js.map"
+    "main.ec27a3e4.js.map": "/foodcipe/static/js/main.ec27a3e4.js.map"
   },
   "entrypoints": [
     "static/css/main.74d7ffef.css",
-    "static/js/main.2367eba0.js"
+    "static/js/main.ec27a3e4.js"
   ]
 }
