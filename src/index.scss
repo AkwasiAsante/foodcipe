@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background-color: #fff;
+  --background-light: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --primary-color: #36ad47;
+  // --primary-color: rgb(255, 0, 86);
+  --text-color: #0a0a0a;
+  --text-light: #575757;
+  --font-size: 16px;
+  --animation-speed: 1;
+
+  --color1: #ffed8f;
+  --color2: #a7d46f;
+  --color5: #359768;
+  --color3: #7be495;
+  --color4: #3c3352;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--background-light);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@import "./styles/animations.scss";
+@import "./styles/app.scss";
+@import "./styles//footer.scss";
+@import "./styles/herosection.scss";
+@import "./styles/improve-section.scss";
+@import "./styles/quote-section.scss";
+@import "./styles/food-categories.scss";
+@import "./styles/recipes-section.scss";
+@import "./styles/blog-section.scss";
+@import "./styles/recipe-details.scss";
+@import "./styles/navbar-section.scss";

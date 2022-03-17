@@ -1,0 +1,207 @@
+.mts__navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+  padding: 2rem 6rem;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+  background-color: #fff;
+  height: 55px;
+  box-shadow: 0 3px 6px var(--shadow-color);
+  z-index: 998;
+  .links {
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    .logo {
+      flex: 0.5;
+
+      a {
+        outline: none;
+        font-size: 1.5em;
+        font-weight: bolder;
+        color: var(--primary-color);
+        text-shadow: 0 1px 3px var(--shadow-color);
+        span {
+          color: var(--text-color);
+        }
+      }
+    }
+
+    .links_cont {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        text-transform: capitalize;
+
+        margin-right: 1rem;
+        margin-left: 1em;
+        color: var(--text-light);
+        letter-spacing: 2px;
+        font-size: 1em;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          height: 3px;
+          width: 100%;
+          background-color: var(--primary-color);
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          transform: scaleX(0);
+          transition: getAnimationDuration(0.2s) ease-in-out;
+        }
+        &:hover {
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+        &.active {
+          color: var(--primary-color);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .login {
+    .button {
+      padding: 0.5rem 1.2rem;
+      color: #fff;
+      background: var(--primary-color);
+      font-weight: 500;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  .menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+    z-index: 999;
+    svg {
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+
+    .menu_container {
+      display: flex;
+      flex-direction: column;
+
+      text-align: start;
+      background: var(--background-color);
+
+      padding: 2rem;
+      position: absolute;
+      top: 40px;
+      right: 0;
+
+      margin-top: 1rem;
+
+      min-width: 210px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+          margin-bottom: 0.9rem;
+        }
+        a {
+          text-transform: capitalize;
+          color: var(--text-light);
+          letter-spacing: 2px;
+          border-left: 0.4em solid transparent;
+          font-size: 1em;
+          position: relative;
+          cursor: pointer;
+
+          &::before {
+            content: "";
+            display: inline-block;
+            height: 3px;
+            width: 100%;
+            background-color: var(--primary-color);
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transition: getAnimationDuration(0.2s) ease-in-out;
+          }
+          &:hover {
+            border-left-color: var(--primary-color);
+          }
+          &.active {
+            border-left-color: var(--primary-color);
+            font-weight: bold;
+          }
+        }
+      }
+      .login {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .mts__navbar {
+    box-shadow: none;
+    .links {
+      .links_cont {
+        display: none;
+      }
+    }
+    .menu {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mts__navbar {
+    padding: 2rem 4rem;
+    box-shadow: 0 3px 6px var(--shadow-color);
+    .login {
+      display: block;
+    }
+    .menu {
+      .menu_container {
+        .login {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .mts__navbar {
+    padding: 2rem 1rem;
+    .login {
+      display: none;
+    }
+    .menu {
+      .menu_container {
+        .login {
+          display: block;
+        }
+      }
+    }
+  }
+}
